@@ -23,7 +23,7 @@ app.get("/product/:id", (req, res) => {
 });
 
 app.get("/category/:name", (req, res) => {
-  const category = req.params.category;
+  const category = req.params.name;
   const productCategory = products.filter(
     (product) => product.category == category
   );
